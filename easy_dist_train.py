@@ -23,6 +23,8 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+
+
 def get_rank_from_env():
     """从环境变量获取分布式训练信息"""
     local_rank = int(os.environ.get('LOCAL_RANK', 0))
